@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "serve -s dist",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@material-tailwind/react": "^2.1.10",
@@ -18,7 +20,9 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
-    "xml2js": "^0.6.2"
+    "serve": "^14.2.3",
+    "xml2js": "^0.6.2",
+    "vite": "^5.4.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",
@@ -33,7 +37,6 @@
     "eslint-plugin-react-refresh": "^0.4.12",
     "globals": "^15.9.0",
     "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.13",
-    "vite": "^5.4.8"
+    "tailwindcss": "^3.4.13"
   }
 }
