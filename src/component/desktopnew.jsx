@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 function DesktopNews() {
   return (
-    <div className="mx-[45px] mt-[12px]">
+    <div className="hidden mx-[45px] mt-[12px] min-[700px]:block ">
       <Important />
     </div>
   );
@@ -38,7 +38,7 @@ function Important() {
   }, []);
   return (
     <div className="flex-col gap-[10px] items-start">
-      <div className="flex items-center gap-[20px]">
+      <div className="hidden  min-[704px]:flex items-center gap-[20px]">
         <p className="font-roboto ml-[4%] font-bold min-[540px]:text-[13px] text-white bg-black px-[6px] py-[4px] ">
           Trending now
         </p>
